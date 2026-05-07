@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: dribbble-clone
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npx serve dist/client -s
+    envVars:
+      - key: NODE_VERSION
+        value: 24.14.1
